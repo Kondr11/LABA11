@@ -9,8 +9,6 @@
 #include <thread>
 #include <future>
 
-#include <async++.h>
-
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>
 
@@ -19,6 +17,8 @@
 #include <Pipe.h>
 #include <IO.h>
 #include <boost/process/group.hpp>
+
+#include <async++.h>
 
 using boost::program_options::options_description;
 using boost::program_options::variables_map;
