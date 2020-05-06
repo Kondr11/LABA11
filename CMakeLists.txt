@@ -77,7 +77,7 @@ target_link_libraries(template
 		${CMAKE_THREAD_LIBS_INIT}
 	    Boost::filesystem
 		Boost::system
-		Boost::process   
+		   
         Async++::Async++)
 
 enable_testing()
