@@ -35,7 +35,6 @@ hunter_add_package(
   thread
   filesystem
   system
-  Process
 )
 find_package(
   Boost
@@ -44,7 +43,6 @@ find_package(
   thread  
   filesystem
   system
-  Process
 )
 
 hunter_add_package(Async++)
