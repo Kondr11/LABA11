@@ -35,7 +35,7 @@ hunter_add_package(
   thread
   filesystem
   system
-  BoostProcess
+  process
 )
 find_package(
   Boost
@@ -44,7 +44,7 @@ find_package(
   thread  
   filesystem
   system
-  BoostProcess
+  process
 )
 
 hunter_add_package(Async++)
@@ -81,7 +81,7 @@ target_link_libraries(template
 		${CMAKE_THREAD_LIBS_INIT}
 	    Boost::filesystem
 		Boost::system
-		BoostProcess::boost_process   
+		Boost::process   
         Async++::Async++)
 
 enable_testing()
