@@ -76,12 +76,12 @@ target_include_directories(tests
 target_link_libraries(tests
         GTest::main template)
 target_link_libraries(template
-        ${CMAKE_THREAD_LIBS_INIT}
-	BoostProcess::boost_process
-        Boost::system
-        Boost::filesystem
-        Boost::program_options
         Boost::boost
+		Boost::program_options
+		${CMAKE_THREAD_LIBS_INIT}
+	    Boost::filesystem
+		Boost::system
+		BoostProcess::boost_process   
         Async++::Async++)
 
 enable_testing()
