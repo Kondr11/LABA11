@@ -53,14 +53,12 @@ find_package(Threads)
 # TODO: change template word to project name and delete this comment
 add_library(template STATIC
         # enum your files and delete this comment
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp)
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
+		${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp)
 add_executable(tests
         # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
-
-add_executable(template
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp)
 
 # TODO: change template word to project name and delete this comment
 target_include_directories(template
